@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
 connect().then(() => {
     try {
         app.listen(port, () => {
-            console.log(`Server connected to ${window.location.origin}${port}`)
+            console.log(`Server connected to ${port}`)
         })
     } catch (error) {
         console.log("Cannot connect to the server");
